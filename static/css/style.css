@@ -49,12 +49,9 @@ Modules - reusable parts of our design
 
 -------------------------------- */
 .cd-container {
-  margin: 0 auto;
+  margin: 280px 0px 0 0;
   position: absolute;
   left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
@@ -64,6 +61,13 @@ Modules - reusable parts of our design
   max-width: 1200px;
   text-align: center;
 }
+
+@media only screen and (max-width: 768px) {
+    .cd-container {
+   margin: 300px 0 0 0;
+  }
+}
+
 .cd-container::after {
   /* clearfix */
   content: '';
@@ -125,7 +129,6 @@ Main components
   min-height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
   z-index: 1;
   background-attachment: fixed;
 }
@@ -385,6 +388,12 @@ Main components
 
 .landingsocial a:active {
   color: #9053a9;
+}
+
+@media only screen and (max-width: 768px) {
+    .landingsocial {
+   top: 96%
+  }
 }
 
 .landingarrowdown {
