@@ -19,7 +19,7 @@
 </head>
 <body>
 	<header class="cd-header">
-		<nav class="cd-main-nav">
+		<nav class="nav-collapse cl-effect-1">
 			<ul>
 				<!-- inser more links here -->
 				<li><a href="index.html">Blox</a></li>
@@ -36,14 +36,12 @@
 
 		<div class="cd-scrolling-bg landing">
 			<div class="cd-container">
-					<img src="static/img/blox_logo.png" class="imgmedium">
+					<img src="static/img/blox_logo.png" class="imgmedium wow flipInX" data-wow-delay="0.2s">
 					<h1 class="landingh1">A cherry top for your home</h1>
 					<button class="btn btn-5 btn-5a icon-cart"><span>Pre-Order now!</span></button>
 					<p>*Limited availability only</p>
+					<a data-scroll data-options='{ "easing": "easeInOutQuad" }' href="#page1"><img src="static/img/mouse.png" class="margintop20 wow fadeInDown" data-wow-delay="0.2s"></a>
 			</div> <!-- cd-container -->
-			<div class="landingarrowdown">
-				<a class="page-scroll" href="#page1"><i class="fa fa-angle-down fa-3x down faa-pulse animated-hover"></i></a>
-			</div>
 			<div class="landingsocial">
 				<a href="https://www.facebook.com/bloxph" target="_blank"><i class="fa fa-facebook-square fa-2x marginlr10"></i></a>
 				<a href="https://www.twitter.com/bloxph" target="_blank"><i class="fa fa-twitter-square fa-2x marginlr10"></i></a>
@@ -76,13 +74,25 @@
 		</div> <!-- cd-scrolling-bg -->
 
 	</main> <!-- cd-main-content -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="static/js/main.js"></script> <!-- Resource jQuery -->
 	<script src="static/js/classie.js"></script>
+	<script src="static/js/responsive-nav.js"></script>
 	<script src="static/js/jquery.easing.min.js"></script>
   	<script src="static/js/wow.min.js"></script>
   	<script>
    		new WOW().init();
   	</script>
+  	<script>
+      var navigation = responsiveNav(".nav-collapse", { 
+        insert: "after", });
+    </script>
+    <script>
+      window.sr = new scrollReveal();
+    </script>
+    <script src='static/js/smooth-scroll.js'></script>
+	<script>
+    	smoothScroll.init();
+	</script>
+	<script src="static/js/jquery.smoothwheel.js"></script>
 </body>
 </html>
