@@ -187,8 +187,8 @@ Main components
   color: #fff;
 }
 .cd-scrolling-bg.cd-color-1 {
-  background-color: #3d3536;
-  color: #a6989a;
+  background-color: #412b45;
+  color: #fff;
 }
 .cd-scrolling-bg.cd-color-2 {
   background-color: #101010;
@@ -1109,4 +1109,178 @@ transition: ease-in-out .2s;
 .nav-toggle.active::before {
   font-size: 24px;
   content:"x";
+}
+
+
+
+/*preorder*/
+.preorder{
+  margin-top: 130px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.preorder h2 {
+  font-size: 2.4em;
+  font-weight: 400;
+  text-align: center;
+  color:#fff;
+  margin-bottom: 40px;
+}
+
+.preordertitle {
+  font-size: 1.4em;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.preordertitle2 {
+  font-size: 1.4em;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+
+.component {
+  margin: 0 auto;
+  max-width: 1366px;
+  position: relative;
+  height: 100%;
+}
+.cbp-mc-form {
+  position: relative;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.cbp-mc-form:before, 
+.cbp-mc-form:after { 
+  content: " "; display: table; 
+}
+
+.cbp-mc-form:after { 
+  clear: both; 
+}
+
+.cbp-mc-column {
+  width: 100%;
+  padding: 10px 30px;
+  float: left;
+}
+
+.cbp-mc-form label {
+  display: block;
+  font-weight: 400;
+  padding: 40px 5px 5px 2px;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: #f2f2f2;
+}
+
+.cbp-mc-form input,
+.cbp-mc-form textarea,
+.cbp-mc-form select {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 1.4em;
+  padding: 5px 10px;
+  color: #11CA66;
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 2px solid #f2f2f2;
+}
+
+.cbp-mc-form input,
+.cbp-mc-form textarea {
+  border: 2px solid #f2f2f2;
+}
+
+.cbp-mc-form textarea {
+  min-height: 200px;
+}
+
+.cbp-mc-form input:focus,
+.cbp-mc-form textarea:focus,
+.cbp-mc-form label:active + input,
+.cbp-mc-form label:active + textarea {
+  outline: none;
+  border: 2px solid #11CA66;
+}
+
+.cbp-mc-form select:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #949494;
+    font-weight: 300;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #949494;
+    font-weight: 300;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #949494;
+    font-weight: 300;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #949494;
+    font-weight: 300;
+}
+
+.cbp-mc-submit-wrap {
+  text-align: center;
+  padding-top: 40px;
+  clear: both;
+}
+
+.cbp-mc-form input.cbp-mc-submit {
+  border: 3px solid #d3d3d3;
+  color: #d3d3d3;
+  width: auto;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cbp-mc-form input.cbp-mc-submit:hover {
+  border: 3px solid #11CA66;
+  color:#11CA66;
+}
+
+.main {
+width: 100%;
+}
+
+
+/*///////preorder*/
+
+.productfeatures {
+  height: 200px;
+  text-align: center;
+}
+
+.productfeatures img {
+  margin-top: 55px;
+}
+
+@media only screen and (max-width: 768px) {
+    .productfeatures img {
+   margin-top: 10px;
+  }
+}
+
+.textenvy {
+  margin: 170px 0 0 5%;
 }
