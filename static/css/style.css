@@ -191,9 +191,22 @@ a {
 /* Sections*/
 
 .sec {
-  height: 1024px;
+  height: 900px;
   display: block;
   position: relative;
+}
+
+.sec2 {
+  height: 900px;
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+    .sec {
+    height: 990px;
+  }
 }
 
 .bgblack {
@@ -204,6 +217,10 @@ a {
   background-color: #412b45;
 }
 
+.bgwhite {
+  background-color: #fff;
+}
+
 
 
 
@@ -211,7 +228,7 @@ a {
 
 .footer {
   clear: both;
-  background-color: #2d2d2d;
+  background-color: #412b45;
   height: 90px;
   width:100%;
 }
@@ -226,6 +243,7 @@ a {
   margin-top: 18px;
   margin-bottom: -10px;
 }
+
 
 
 /*buttons*/
@@ -284,6 +302,10 @@ a {
 
 .icon-cart-2:before {
   content: "\f07b";
+}
+
+.icon-book:before {
+  content: "\f02d";
 }
 
 /* Button 5 */
@@ -366,57 +388,228 @@ a {
   left: 0;
 }
 
-/*Hover Effects
 
-.landingsocial {
-  margin: 0 auto;
-  position: absolute;
-  left: 50%;
-  top: 94%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  width: 90%;
-  max-width: 1200px;
-  text-align: center;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.landingsocial a:hover {
-  color:#412b45;
+
+
+/*Products*/
+
+.footerlogoproduct {
+  margin-top: 38px;
+  margin-bottom: 20px; 
 }
 
-.landingsocial a:active {
-  color: #9053a9;
+.bgpreordernow {
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 300px;
+  background-color: #101010;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-@media only screen and (max-width: 768px) {
-    .landingsocial {
-   top: 96%
+.bgpreordernow em {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+    .bgpreordernow {
+    height: 400px;
   }
 }
 
-*/
+
+/*Envy*/
+
+.bgaddon {
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 500px;
+  background: url('../img/addon.png');
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bgaddontext {
+  text-align: center;
+  margin: 50px 0 0 1%;
+}
+
+.bgaddon span {
+  color: #2d2d2d;
+  font-size: 2.5em;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.bgaddon em {
+  color: #2d2d2d;
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.bgspecs {
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 1024px;
+  background: url('../img/specs.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bgspecstext {
+  margin: 280px 0 0 1%;
+}
+
+.bgspecstext li {
+  color:#fff;
+}
+
+.bgspecstext span {
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 300;
+  line-height: 1.8;
+  text-shadow: 0.5px 0.5px #2d2d2d;
+}
+
+.spectitle {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1.2;
+  text-shadow: 0.5px 0.5px #2d2d2d;
+}
+
+.bgspecstext em {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.2;
+  text-shadow: 0.5px 0.5px #2d2d2d;
+}
+
+.storageimg {
+  margin: 550px 0 0 1%;
+}
+
+.bgstorage {
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 800px;
+  background: url('../img/storage.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bgstoragetext {
+  margin: 500px 0 0 1%;
+}
+
+.bgstoragetext span {
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 300;
+  line-height: 1.8;
+  text-shadow: 0.5px 0.5px #2d2d2d;
+}
+
+.bgstoragetext em {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.2;
+  text-shadow: 0.5px 0.5px #2d2d2d;
+}
+
+@media only screen and (max-width: 991px) {
+    .bgstoragetext {
+      margin: 10px 0 0 1%;
+    }
+
+    .storageimg {
+      margin: 400px 0 0 1%;
+    }
+
+    .bgspecstext {
+    margin: 50px 0 0 1%;
+  }
+}
+
+@media only screen and (max-width: 544px) {
+    .bgstorage {
+    height: 1000px;
+  }
+
+  .storageimg {
+      margin: 500px 0 0 1%;
+    }
+}
 
 
+.bgpic {
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 800px;
+  background: url('../img/portable.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bgpictext {
+  margin: 280px 0 0 1%;
+}
+
+.bgpictext span {
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 300;
+  line-height: 1.8;
+  text-shadow: 0.5px 0.5px #2d2d2d;
+}
+
+.bgpictext em {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.2;
+  text-shadow: 0.5px 0.5px #2d2d2d;
+}
+
+.textproduct {
+  margin: 170px 0 0 1%;
+}
+
+.textproduct span {
+  font-size: 2.5em;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.textproduct em {
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 991px) {
+    .textproduct {
+      margin: 10px 0 0 1%;
+    }
+}
 
 
-
-
-
-
-
-
-
-
-
-
-/*Products */
 .projects-container {
   height: 100vh;
   width: 100vw;
@@ -512,6 +705,7 @@ a {
   -webkit-transition: z-index 0s 0s, top 0.4s 0s;
   -moz-transition: z-index 0s 0s, top 0.4s 0s;
   transition: z-index 0s 0s, top 0.4s 0s;
+  z-index: 5;
 }
 .projects-container .cd-single-project.is-full-width::after {
   height: 100vh;
@@ -699,7 +893,7 @@ a {
   padding: 4em 0;
   cursor: auto;
   background-color: #ffffff;
-  color: #3f538e;
+  color: #2d2d2d;
   -webkit-transition: opacity 0.4s 0s, visibility 0s 0.4s;
   -moz-transition: opacity 0.4s 0s, visibility 0s 0.4s;
   transition: opacity 0.4s 0s, visibility 0s 0.4s;
@@ -710,8 +904,8 @@ a {
   z-index: 5;
 }
 .cd-project-info p {
-  width: 90%;
-  max-width: 800px;
+  width: 98%;
+  max-width: 1600px;
   margin: 0 auto;
   line-height: 2;
 }
@@ -784,6 +978,7 @@ a {
   -webkit-transition: -webkit-transform 0.4s 0s, visibility 0s 0s;
   -moz-transition: -moz-transform 0.4s 0s, visibility 0s 0s;
   transition: transform 0.4s 0s, visibility 0s 0s;
+  z-index: 6
 }
 
 .project-is-open .cd-scroll {
