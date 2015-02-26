@@ -376,6 +376,12 @@ a:hover, a:focus {
   text-align: center;
 }
 
+.centerdiv5{
+  width: 98%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  text-align: center;
+}
 
 .textcenter {
    text-align: center;
@@ -429,7 +435,7 @@ a:hover, a:focus {
 
 .imglarge {
   width: 96% !important;
-  max-width: 600px !important;
+  max-width: 590px !important;
 }
 
 .imgmedium {
@@ -444,6 +450,7 @@ a:hover, a:focus {
 }
 
 .imgxsmall {
+  width: 98%;
   min-width: 50px;
   max-width: 100px;
   -webkit-transition: all 0.3s;
