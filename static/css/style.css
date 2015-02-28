@@ -247,7 +247,9 @@ a {
   display: table;
 }
 
-
+.bgwhite {
+  background-color: #fff;
+}
 
 .bgbeforeserver {
   clear: both;
@@ -971,7 +973,6 @@ a {
   position: relative;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  background-color: #fff;
 }
 .projects-container::before {
   /* never visible - this is used in jQuery to check the current MQ */
