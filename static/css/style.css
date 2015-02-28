@@ -30,13 +30,13 @@ body {
   font-size: 100%;
   font-family: 'Source Sans Pro';
   color: #f2f2f2;
-  background-color: #000;
 }
 
 body, html {
   /* important */
   height: 100%;
-  width: 100%
+  width: 100%;
+  background-color:#000;
 }
 
 a {
@@ -49,9 +49,7 @@ a {
 .cd-header {
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 50px;
   z-index: 4;
 }
 .cd-header:after {
@@ -116,8 +114,6 @@ a {
   }
 
 }  
-
-
 
 .landingsocial {
   margin: 0 auto;
@@ -188,69 +184,72 @@ a {
   position: relative;
 }
 
-
 /* Sections*/
 
-.sec {
+.wrap {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 98%;
+  display: table;
+}
+
+.wrap2 {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 98%;
+  display: table;
+}
+
+.whatsblox {
+  width: 100%;
   height: 900px;
+  background: url('../img/blox.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   position: relative;
 }
 
-.sec2 {
-  height: 900px;
-  clear: both;
-  width: 100%;
-  position: relative;
+.server {
+  background-color: #fff;
+  padding: 100px 0 50px;
 }
 
-.sec3 {
-  clear: both;
-  height: 1400px;
-  position: relative;
-  width: 100%;
-}
-
-.sec4 {
-  clear: both;
-  height: 300px;
-  position: relative;
-  width: 100%;
-}
-
-.sec5 {
-  clear: both;
-  height: 600px;
-  position: relative;
-  width: 100%;
-}
-
-@media only screen and (max-width: 991px) {
-    .sec {
-    height: 990px;
-  }
-}
-.bgfullblack {
+.server2 {
+  padding: 50px 0 50px;
   background-color: #000;
 }
 
-.bgblack {
-  background-color: #101010;
-}
-
-.bgred2 {
-  background: -webkit-linear-gradient(top, #412b45 0%,#412b45 100%);
-}
-
-.bgblox {
+.medias {
+  padding: 80px 0 80px;
   background-color: #412b45;
 }
 
-.bgwhite {
+.stream {
+  padding: 80px 0 80px;
   background-color: #fff;
 }
 
+.browser {
+  padding: 80px 0 80px;
+  background-color: #412b45;
+}
+
+.interactive {
+  padding: 50px 0 80px;
+  background-color: #fff;
+  margin-top: -200px;
+}
+
+.interactive2 {
+  padding: 80px 0 120px;
+  background-color: #fff;
+  display: table;
+}
+
+
+
 .bgbeforeserver {
-  float: left;
   clear: both;
   width: 100%;
   height: 500px;
@@ -261,316 +260,250 @@ a {
   position: relative;
 }
 
-.bgbeforeinteractive {
-  float: left;
+.bgbeforemedia {
   clear: both;
   width: 100%;
   height: 500px;
-  background: url('../img/imgtointeractive.jpg');
+  background: url('../img/bgbeforemedias.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   position: relative;
 }
+
+.bgbeforinteactive {
+  clear: both;
+  width: 100%;
+  height: 500px;
+  background: url('../img/movieposter.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.interactbgphone {
+  clear: both;
+  width: 100%;
+  height: 700px;
+  background: url('../img/interactbgphonefornow.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  margin-top: -30px;
+  background-color: #fff;
+}
+
+.interactbgphone2 {
+  clear: both;
+  width: 100%;
+  height: 460px;
+  background: url('../img/interactbgphone2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+
 
 @media only screen and (max-width: 768px) {
     .bgbeforeserver {
     height: 300px;
   }
+
+  .interactbgphone {
+    height: 420px;
+    margin-top: -80px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .interactbgphone {
+    height: 920px;
+  }
+
 }
 
 /*//main*/
-.servertitleimg {
-  margin-top: 30px;
-}
-.serverimg {
-  margin: 180px 0 0 1%;
+
+.bloxfeatureimg {
+  margin-top: 380px;
 }
 
-.serverimg3 {
-  margin: 140px 0 0 0;
+.imgxbsmall {
+    width: 99%;
+    max-width: 60px !important;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
-.servertext1 {
-  width: 90%;
-  margin: 240px 0 0 1%;
-  color:#2d2d2d;
+
+.bloxtext {
+  margin-top: 250px;
+  text-align: center;
+  max-width: 1280px;
 }
 
-.servertext1 span {
+.bloxtext h2 {
   font-size: 2.5em;
   font-weight: 300;
   line-height: 1.8;
+  color: #f2f2f2;
 }
 
-.servertext1 em {
+.bloxtext p {
   font-size: 1.5em;
   font-weight: 300;
   line-height: 1.2;
+  color: #f2f2f2;
 }
 
-.serverimg2 {
-  margin: 50px 0 0 1%;
-  display: inline-block;
+
+/*//server*/
+
+.serverimg  {
+  text-align: center;
 }
 
-.servertext2{
-  text-align: right;
-  margin: 0 8% 0 10%;
-  color:#2d2d2d;
-  color: #fff;
+.servertext {
+  margin-top: 50px;
 }
 
-.servertext3{
-  margin: 0px 10% 0 8%;
-  color:#2d2d2d;
-  color: #fff;
-}
-
-.servertext2 span {
-  font-size: 2em;
+.servertext h2 {
+  font-size: 2.5em;
   font-weight: 300;
   line-height: 1.8;
-}  
-
-.servertext2 h2 {
-  color:#f2f2f2;
-  font-size: 2em;
-  font-weight: 500;
-  line-height: 1.2;
-}
-.servertext3 span {
-  font-size: 2em;
-  font-weight: 300;
-  line-height: 1.8;
+  color: #2d2d2d;
 }
 
-.servertext3 h2 {
-  color:#f2f2f2;
-  font-size: 2em;
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-.servertext2 em, 
-.servertext3 em {
-  font-size: 1.2em;
+.servertext p {
+  font-size: 1.5em;
   font-weight: 300;
   line-height: 1.2;
+  color: #2d2d2d;
 }
 
-.servertext2 strong{
-  color:#2CC774;
-  font-size: 1.3em;
-  font-weight: 300;
-  line-height: 1.4;
-}
-
-.servertext3 strong {
-  color:#54ACF5;
-  font-size: 1.3em;
-  font-weight: 300;
-  line-height: 1.4;
-}
 
 .ownerimg {
-  margin: 10px 70px 0px 70px;
+  margin: 10px 30px 0px 30px;
 }
 
 .guestsimg {
-  margin: 10px 70px 0px 70px;
+  margin: 10px 30px 0px 30px;
 }
 
-@media only screen and (max-width: 1024px) {
-    .servertext1 {
-      width: 90%;
-      margin: 170px 0 0 1%;
-      font-size: 0.9em;
-    }
+.servertext2{
+  text-align: center;
+}
+.servertext2 h2 {
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #f2f2f2;
 }
 
-
-
-@media only screen and (max-width: 768px) {
-    .serverimg2 {
-      margin: 10px 0 0 1%;
-    }
-
-    .ownerimg {
-      margin: 10px 50px 0px 50px;
-    }
-
-    .guestsimg {
-      margin: 10px 50px 0px 50px;
-    }
-
-    .servertext2{
-      text-align: center;
-      margin: 50px 0 0 5%;
-    }
-
-    .servertext3{
-      text-align: center;
-      margin: 50px 0 0 5%;
-    }
-
-    .servertext1 {
-      width: 100%;
-      margin: 40px 0 0 1%;
-      text-align: center;
-      font-size: 1em;
-    }
-
-    .serverimg3 {
-      margin: 40px 0 0 0;
-    }
-
-    .sec3 {
-      height: 1200px;
-    }
-
-    .sec4 {
-      clear: both;
-      height: 400px;
-      display: block;
-      width: 100%;
-    }
+.servertext2 strong {
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #2CC774;
 }
 
-@media only screen and (max-width: 500px) {
-    .ownerimg {
-      margin: 10px 24px 0px 24px;
-    }
-
-    .guestsimg {
-      margin: 10px 24px 0px 24px;
-    }
-}
-
-
-@media only screen and (max-width: 480px) {
-    .sec3 {
-      height: 1000px;
-    }
+.servertext2 p {
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #f2f2f2;
 }
 
 /*//medias*/
 
-.mediatext1 {
-  width: 90%;
-  margin: 240px 0 0 1%;
-  color:#f2f2f2;
+.mediaimg  {
+  text-align: center;
 }
 
-.mediatext1 span {
+.mediatext {
+  margin-top: 50px;
+}
+
+.mediatext h2 {
   font-size: 2.5em;
   font-weight: 300;
   line-height: 1.8;
-  color:#f2f2f2;
+  color: #f2f2f2;
 }
 
-.mediatext1 em {
+.mediatext p {
   font-size: 1.5em;
   font-weight: 300;
   line-height: 1.2;
-  color:#f2f2f2;
+  color: #f2f2f2;
 }
 
-.mediatext4 {
-  margin: 40px 0 0 1%;
-  color:#2d2d2d;
+.mediasfeatureimg {
+  margin-top: 220px;
 }
 
-.mediatext4 span {
+.streamtext {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.streamtext h2 {
   font-size: 2.5em;
   font-weight: 300;
   line-height: 1.8;
-  color:#2d2d2d;
+  color: #2d2d2d;
 }
 
-.mediatext4 em {
+.streamtext p {
   font-size: 1.5em;
   font-weight: 300;
   line-height: 1.2;
-  color:#2d2d2d;
-}
-
-.mediaimg {
-  margin: 110px 0 0 1%;
+  color: #2d2d2d;
 }
 
 /*//browser*/
 
+
 .browsertext {
-  margin: 40px 0 0 1%;
-  color:#f2f2f2;
+  margin-top: 120px;
 }
 
-.browsertext span {
+.browsertext h2 {
   font-size: 2.5em;
   font-weight: 300;
   line-height: 1.8;
-  color:#f2f2f2;
+  color: #f2f2f2;
 }
 
-.browsertext em {
+.browsertext p {
   font-size: 1.5em;
   font-weight: 300;
   line-height: 1.2;
-  color:#f2f2f2;
+  color: #f2f2f2;
 }
 
-.browserbottext {
-  margin-top: 20px;
-  font-size: 1.5em;
-  font-weight: 300;
-  line-height: 1.2;
-  color:#f2f2f2;
-}
-
-.browserbottext strong {
-  font-weight: 400;
-}
-
-/*//interactive*/
-
-.interactivetext {
-  margin: 40px 0 0 1%;
-  color:#2d2d2d;
-}
-
-.interactivetext span {
-  font-size: 2.5em;
+.browsertext strong {
+  font-size: 1.4em;
   font-weight: 300;
   line-height: 1.8;
-  color:#2d2d2d;
+  color: #2CC774;
 }
 
-.interactivetext em {
-  font-size: 1.5em;
-  font-weight: 300;
-  line-height: 1.2;
-  color:#2d2d2d;
-}
-
-.interactivetext2 {
-  margin: 40px 0 0 1%;
-  color:#2d2d2d;
-}
-
-.interactivetext2 span {
-  font-size: 1.6em;
-  font-weight: 400;
-  line-height: 1.8;
-  color:#2d2d2d;
-}
-
-.interactivetext2 em {
-  font-size: 1.2em;
-  font-weight: 300;
-  line-height: 1.2;
-  color:#2d2d2d;
-}
-
+/*//interact*/
 
 
 /*//Footer*/
@@ -586,11 +519,84 @@ a {
   color:#5F5F5F;
   font-weight: 800;
   font-size: 0.8em;
+  padding-top: 40px;
 }
 
 .footerinside img {
   margin-top: 18px;
   margin-bottom: -10px;
+}
+
+/*Medias*/
+
+@media only screen and (max-width: 480px) {
+    .ownerimg {
+      margin: 10px 10px 0px 10px;
+    }
+
+    .guestsimg {
+      margin: 10px 10px 0px 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .ownerimg {
+      margin: 10px 70px 0px 70px;
+    }
+
+    .guestsimg {
+      margin: 10px 70px 0px 70px;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .servertext {
+      text-align: center;
+      font-size: 0.9em;
+    }
+
+    .mediatext {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .wrap {
+      margin: 0 auto;
+      padding: 0 15px;
+      max-width: 98%;
+      display: inline-block;
+    }
+
+    .bloxtext {
+      margin-top: 200px;
+    }
+
+    .bloxfeatureimg {
+      margin-top: 180px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 991px) {
+    .browsertext {
+      margin-top: 50px;
+      text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .browsertext {
+      margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .browsertext {
+      margin-top: 50px;
+    }
 }
 
 
